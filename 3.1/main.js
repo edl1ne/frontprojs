@@ -1,4 +1,4 @@
-// Виведення всіх основних типів даних
+// 3.1
 let stringType = "string";
 let numberType = 42;
 let booleanType = true;
