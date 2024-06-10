@@ -9,7 +9,7 @@ function createSum() {
 
 const sum = createSum(); 
 
-console.log(sum(4)); // 4
-console.log(sum(6)); // 10
-console.log(sum(10)); // 20
-console.log(sum(7)); // 27
+console.log(sum(7)); // 7
+console.log(sum(34)); // 41
+console.log(sum(23)); // 64
+console.log(sum(54)); // 118
