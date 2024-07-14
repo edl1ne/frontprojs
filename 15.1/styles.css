@@ -52,3 +52,12 @@ li .complete-button {
 li .complete-button:hover {
     background-color: #45a049;
 }
+li .checkmark {
+    display: none;
+    margin-right: 10px;
+    font-size: 20px;
+    color: green;
+}
+li.completed .checkmark {
+    display: inline;
+}

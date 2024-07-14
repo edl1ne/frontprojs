@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     taskList.addEventListener('click', function(event) {
         if (event.target.tagName === 'BUTTON') {
-            const taskItem = event.target.parentElement;
+            const taskItem = event.target.parentElement.parentElement;
             if (event.target.classList.contains('delete-button')) {
                 taskItem.remove();
             } else if (event.target.classList.contains('complete-button')) {
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function addTask(text, completed = false) {
         const newTask = document.createElement('li');
         newTask.innerHTML = `
+            <span class="checkmark">&#10003;</span>
             <span>${text}</span>
             <div>
                 <button class="complete-button">Complete</button>
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const tasks = [];
         taskList.querySelectorAll('li').forEach(taskItem => {
             tasks.push({
-                text: taskItem.querySelector('span').textContent,
+                text: taskItem.querySelector('span:nth-of-type(2)').textContent,
                 completed: taskItem.classList.contains('completed')
             });
         });
