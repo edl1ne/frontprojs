@@ -9,6 +9,9 @@ async function fetchWeather() {
         document.getElementById('city').textContent = data.name;
         document.getElementById('temperature').textContent = data.main.temp;
         document.getElementById('description').textContent = data.weather[0].description;
+        document.getElementById('humidity').textContent = data.main.humidity;
+        document.getElementById('wind-speed').textContent = data.wind.speed;
+        document.getElementById('pressure').textContent = data.main.pressure;
         document.getElementById('datetime').textContent = new Date().toLocaleString();
     } catch (error) {
         console.error('Error:', error);
