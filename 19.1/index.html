@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Widget</title>
+    <title>Weather widget</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="weather-widget">
-        <h2>Weather in <span id="city-name">Kyiv</span></h2>
-        <p id="weather-description">Description</p>
-        <p id="temperature">Temperature: --°C</p>
-        <button id="refresh-button">Refresh</button>
+        <h2>Current weather</h2>
+        <div id="weather-data">
+            <p>City: <span id="city"></span></p>
+            <p>Temperature: <span id="temperature"></span>°C</p>
+            <p>Description: <span id="description"></span></p>
+            <p>Current date and time: <span id="datetime"></span></p>
+        </div>
+        <button onclick="fetchWeather()">Refresh</button>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>

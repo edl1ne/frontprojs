@@ -4,37 +4,34 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #e0f7fa;
-    margin: 0;
+    background-color: #f0f0f0;
 }
 
 .weather-widget {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .weather-widget h2 {
-    margin: 0 0 10px;
+    margin-bottom: 20px;
 }
 
-.weather-widget p {
-    margin: 5px 0;
+#weather-data p {
+    margin: 10px 0;
 }
 
-#refresh-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #0288d1;
-    color: #ffffff;
+button {
+    background-color: #007bff;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#refresh-button:hover {
-    background: #0277bd;
+button:hover {
+    background-color: #0056b3;
 }
