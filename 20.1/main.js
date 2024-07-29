@@ -3,7 +3,6 @@ $(document).ready(function() {
     const addTaskButton = $('#addTaskButton');
     const newTaskInput = $('#newTask');
 
-    // Load tasks from Local Storage
     loadTasks();
 
     addTaskButton.click(function() {
