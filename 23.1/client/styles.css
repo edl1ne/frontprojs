@@ -1,0 +1,55 @@
+.todo-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.todo-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+li.completed {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+}
+li button {
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+li button:hover {
+    background-color: #d32f2f;
+}
+li .complete-button {
+    background-color: #4CAF50;
+    margin-right: 10px;
+}
+li .complete-button:hover {
+    background-color: #45a049;
+}
+li .checkmark {
+    display: none;
+    margin-right: 10px;
+    font-size: 20px;
+    color: green;
+}
+li.completed .checkmark {
+    display: inline;
+}
